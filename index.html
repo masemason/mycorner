@@ -1,42 +1,102 @@
 <html><head>
 		<title>My Corner</title>
+		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/animations.css">
 		<style type="text/css">
-			@font-face {
-  font-family: 'graffiti';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('http://masemason.github.io/mycorner/css/TheBattleCont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+			
 			h1{
-			   font-family: 'graffiti';
+			   font-family: 'Rock Salt', cursive;
 			   color: white;
+			   margin:0px;
 			}
 			body{
 			    /*background-image:url('http://masemason.github.io/mycorner/images/meandc.jpg'); */
 			    background-image:url('http://www.yaharapridefarms.org/wp-content/uploads/2013/06/Texture-Background-Dark-Spot-HD.jpg');
 			    background-repeat : no-repeat;
-			    background-blend-mode:hard-light; 
+			    /*background-blend-mode:hard-light; */
 			    background-color:black;
 			    background-size:cover;
+			    margin:0px;
 			}
 			.titlebx{
 				background-color:black;
-				height:70px;
+				height:80px;
 				width:100%;
+				padding:10px;
+				opacity:0.6;
+				
+			}
+			.grid{
+				max-width:100%;
+				display:flex;
+			}
+			.col1, .col2, .col3, .col4{
+				background-color:white;
+				opacity:0.4;
+				width:25%;
+				height:100%;
+				margin:30px;
+				padding:20px;
+				border-radius:50px;
+				text-align:center;
+				-webkit-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+			}
+			a{
+				font-family: 'Rock Salt', cursive;
+			   color: black;
+			   margin:10px;
+			   white-space:nowrap;
+			}
+			
+			.tossingOver:hover{
+				
+	animation-name: tossing;
+	-webkit-animation-name: tossing;	
+
+	animation-duration: 1.0s;	
+	-webkit-animation-duration: 1.0s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
 			}
 		
 		</style>
 	</head>
 	<body>
 		<div>
-		<div class="titlebx">
-			<h1>
-				Mason's Corner
-			</h1>
-		</div>
+			<div class="titlebx stretchLeft">
+				<h1>Mason's Corner</h1>
+			</div>
+			
+			<div class="grid">
+				<div class="col1 slideLeft">
+					<a class="hatch tossingOver" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
+						My Bugs
+					</a>
+				<a class="hatch tossingOver" href="https://slcad684.us.oracle.com:10620/hcmCore/faces/FuseOverview">
+						slcad684
+					</a>
+					<a class="hatch tossingOver" href="https://slcad683.us.oracle.com:10620/hcmCore/faces/FuseOverview">
+						slcad683
+					</a>
+					<a class="hatch tossingOver" href="https://oracle.zoom.us/j/7668922342">
+						Sugandha's Zoom
+					</a>
+					
+				</div>
+				<div class="col2 slideLeft">
+				
+				</div>
+				<div class="col3 slideLeft">
+				
+				</div>
+				<div class="col4 slideLeft">
+				
+				</div>
+			</div>
 		</div>
 	
 </body></html>
