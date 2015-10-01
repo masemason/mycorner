@@ -25,7 +25,7 @@
 				height:80px;
 				width:100%;
 				padding:10px;
-				opacity:0.4;
+				opacity:0.3;
 				
 			}
 			.grid{
@@ -34,7 +34,7 @@
 			}
 			.col1, .col2, .col3, .col4{
 				background-color:white;
-				opacity:0.4;
+				opacity:0.6;
 				width:25%;
 				height:100%;
 				margin:30px;
@@ -42,8 +42,8 @@
 				border-radius:50px;
 				text-align:center;
 				-webkit-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+                box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 			}
 			a{
 				font-family: 'Rock Salt', cursive;
@@ -55,15 +55,44 @@ box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 			
 			.tossingOver:hover{
 				
-	animation-name: tossing;
-	-webkit-animation-name: tossing;	
+	            animation-name: tossing;
+				-webkit-animation-name: tossing;	
 
-	animation-duration: 1.0s;	
-	-webkit-animation-duration: 1.0s;
+				animation-duration: 1.0s;	
+				-webkit-animation-duration: 1.0s;
 
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
 
+			}
+			
+			.slideLeftDelay1{
+				animation-duration: 1.5s !important;	
+				-webkit-animation-duration: 1.5s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
+			}
+			
+			.slideLeftDelay2{
+				animation-duration: 2s !important;	
+				-webkit-animation-duration: 2s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
+			}
+			.slideLeftDelay3{
+				animation-duration: 2.5s !important;	
+				-webkit-animation-duration: 2.5s !important;
+				animation-name: slideLeft;
+				-webkit-animation-name: slideLeft;	
+				animation-timing-function: ease-in-out;	
+				-webkit-animation-timing-function: ease-in-out;		
+				visibility: visible !important;	
 			}
 		
 		</style>
@@ -105,16 +134,26 @@ box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 					<a class="hatch tossingOver" target="_blank" href="https://oracle.zoom.us/j/7668922342">
 						Sugandha's Zoom
 					</a>
+					<a class="hatch tossingOver" target="_blank" href="https://confluence.oraclecorp.com/confluence/display/TRO/Summary+of+Environments">
+						Environment Details
+					</a>
+					
 					
 				</div>
-				<div class="col2 slideLeft">
+				<div class="col2 slideLeftDelay1">
 				
 				</div>
-				<div class="col3 slideLeft">
+				<div class="col3 slideLeftDelay2">
 				
 				</div>
-				<div class="col4 slideLeft">
-				
+				<div class="col4 slideLeftDelay3">
+					<a class="hatch tossingOver" target="_blank" href="https://youtu.be/t976jM0-_IE?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
+						Random Music Playlist
+					</a>
+					<a class="hatch tossingOver" target="_blank" href="http://www.tribalfootball.com/clubs/arsenal">
+						Tribal - Arsenal
+					</a>
+					
 				</div>
 			</div>
 		</div>

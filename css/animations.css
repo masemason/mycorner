@@ -198,6 +198,20 @@ slideLeft
 	}
 }
 
+			.slideLeft .delay1{
+				animation-duration: 1.5s !important;	
+				-webkit-animation-duration: 1.5s !important;
+			}
+			
+			.slideLeft .delay2{
+				animation-duration: 2s !important;	
+				-webkit-animation-duration: 2s !important;
+			}
+			.slideLeft .delay3{
+				animation-duration: 2.5s !important;	
+				-webkit-animation-duration: 2.5s !important;
+			}
+
 /*
 ==============================================
 slideRight
