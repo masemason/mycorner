@@ -45,6 +45,8 @@
                 -moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
                 box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 			}
+			
+			
 			a{
 				font-family: 'Rock Salt', cursive;
 				/*font-family: 'Shadows Into Light', cursive;*/
@@ -65,6 +67,9 @@
 				-webkit-animation-iteration-count: infinite;
 
 			}
+			
+			.grow { transition: all .2s ease-in-out; }
+			.grow:hover { transform: scale(1.1); }
 			
 			.slideLeftDelay1{
 				animation-duration: 1.5s !important;	
@@ -118,7 +123,7 @@
 </form>
 			</div>-->
 			<div class="grid">
-				<div class="col1 slideLeft">
+				<div class="col1 grow slideLeft">
 					<a class="hatch tossingOver" target="_blank" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
 						My Bugs
 					</a>
@@ -140,13 +145,13 @@
 					
 					
 				</div>
-				<div class="col2 slideLeftDelay1">
+				<div class="col2 grow slideLeftDelay1">
 				
 				</div>
-				<div class="col3 slideLeftDelay2">
+				<div class="col3 grow slideLeftDelay2">
 				
 				</div>
-				<div class="col4 slideLeftDelay3">
+				<div class="col4 grow slideLeftDelay3">
 					<a class="hatch tossingOver" target="_blank" href="https://youtu.be/eCGV26aj-mM?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
 						Random Music Playlist
 					</a>
