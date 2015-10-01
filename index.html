@@ -1,8 +1,8 @@
 <html><head>
 		<title>My Corner</title>
-		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="http://masemason.github.io/mycorner/css/animations.css">
-		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<style type="text/css">
 			
@@ -42,22 +42,22 @@
 				border-radius:50px;
 				text-align:center;
 				-webkit-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
-                -moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
-                box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+                		-moz-box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
+                		box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 			}
 			
 			
 			a{
 				font-family: 'Rock Salt', cursive;
 				/*font-family: 'Shadows Into Light', cursive;*/
-			   color: black;
-			   margin:10px;
-			   white-space:nowrap;
-			}
+			   	color: black;
+			   	margin:10px;
+			   	white-space:nowrap;
+			} 
 			
 			.tossingOver:hover{
 				
-	            animation-name: tossing;
+	            		animation-name: tossing;
 				-webkit-animation-name: tossing;	
 
 				animation-duration: 1.0s;	
@@ -68,9 +68,35 @@
 
 			}
 			
-			.grow { transition: all .2s ease-in-out; }
-			.grow:hover { transform: scale(1.1); }
+			.grow { transition: all 0.1s ease-in-out; }
+			.grow:hover { transform: scale(1.02); }
+			 
+			.expander
+			{
+			    
+			    -webkit-transition: all 200ms ease-in;
+			    -webkit-transform: scale(1); 
+			    -ms-transition: all 200ms ease-in;
+			    -ms-transform: scale(1); 
+			    -moz-transition: all 200ms ease-in;
+			    -moz-transform: scale(1);
+			    transition: all 200ms ease-in;
+			    transform: scale(1);   
 			
+			}
+			.expander:hover
+			{
+			    box-shadow: 0px 0px 50px #FFFFFF;
+			    z-index: 2;
+			    -webkit-transition: all 200ms ease-in;
+			    -webkit-transform: scale(1.15);
+			    -ms-transition: all 200ms ease-in;
+			    -ms-transform: scale(1.15);   
+			    -moz-transition: all 200ms ease-in;
+			    -moz-transform: scale(1.15);
+			    transition: all 200ms ease-in;
+			    transform: scale(1.15);
+			} 
 			.slideLeftDelay1{
 				animation-duration: 1.5s !important;	
 				-webkit-animation-duration: 1.5s !important;
@@ -123,7 +149,7 @@
 </form>
 			</div>-->
 			<div class="grid">
-				<div class="col1 grow slideLeft">
+				<div class="col1 expander slideLeft">
 					<a class="hatch tossingOver" target="_blank" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
 						My Bugs
 					</a>
@@ -145,13 +171,13 @@
 					
 					
 				</div>
-				<div class="col2 grow slideLeftDelay1">
+				<div class="col2 expander slideLeftDelay1">
 				
 				</div>
-				<div class="col3 grow slideLeftDelay2">
+				<div class="col3 expander slideLeftDelay2">
 				
 				</div>
-				<div class="col4 grow slideLeftDelay3">
+				<div class="col4 expander slideLeftDelay3">
 					<a class="hatch tossingOver" target="_blank" href="https://youtu.be/eCGV26aj-mM?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
 						Random Music Playlist
 					</a>
@@ -163,4 +189,5 @@
 			</div>
 		</div>
 	
+
 </body></html>
