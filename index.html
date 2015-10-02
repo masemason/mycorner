@@ -8,7 +8,8 @@
 			
 			h1{
 			   font-family: 'Rock Salt', cursive;
-			   color: white;
+			   color: white; 
+			   font-size:30pt;
 			   margin:0px;
 			}
 			body{
@@ -25,8 +26,10 @@
 				height:80px;
 				width:100%;
 				padding:10px;
-				opacity:0.3;
-				
+				opacity:0.3; margin-bottom:20px;
+				border-color: white;
+    				border-bottom-width: 15px;
+    				border-bottom-style: ridge;
 			}
 			.grid{
 				max-width:100%;
@@ -54,7 +57,7 @@
 			}
 			.linkrow{
 				width:100%;
-				min-height:41px;
+				min-height:45.5px;
 			}
 			a{
 				font-family: 'Rock Salt', cursive;
@@ -62,28 +65,24 @@
 			   	color: black;
 			   	margin:10px;
 			   	white-space:nowrap;-moz-transition-property: all;  /* FF4+ */
-  				-moz-transition-duration: 1s;
+  				-moz-transition-duration: 0.5s;
 				  -webkit-transition-property: all;  /* Saf3.2+, Chrome */
-				  -webkit-transition-duration: 1s;
+				  -webkit-transition-duration: 0.5s;
 				  -o-transition-property: all;  /* Opera 10.5+ */
-				  -o-transition-duration: 1s;
+				  -o-transition-duration: 0.5s;
 				  -ms-transition-property: all;  /* IE10? */
-				  -ms-transition-duration: 1s;
+				  -ms-transition-duration: 0.5s;
 				  transition-property: all;  /* Standard */
-				  transition-duration: 1s;
+				  transition-duration: 0.5s;
 			} 
 			
 			.linkOver:hover{
-				
-	             		color:deepskyblue; 
-	             		font-size:107%;
-
+	             		color:white; 
+	             		font-size:120%;
 			}
-			
 			
 			.expander
 			{
-			    
 			    -webkit-transition: all 200ms ease-in;
 			    -webkit-transform: scale(1); 
 			    -ms-transition: all 200ms ease-in;
@@ -96,7 +95,7 @@
 			}
 			.expander:hover
 			{
-			    box-shadow: 0px 0px 50px #FFFFFF;
+			    box-shadow: 0px 0px 50px deepskyblue; background-color:deepskyblue;
 			    z-index: 2;
 			    -webkit-transition: all 200ms ease-in;
 			    -webkit-transform: scale(1.1);
@@ -218,6 +217,7 @@
 			</div>
 		</div>
 	
+
 
 
 </body></html>
