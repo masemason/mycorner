@@ -37,7 +37,7 @@
 				opacity:0.6;
 				width:25%;
 				height:100%;
-				margin:30px;
+				margin:30px 30px;
 				padding:20px;
 				border-radius:50px;
 				text-align:center;
@@ -46,31 +46,41 @@
                 		box-shadow: 10px 10px 5px 0px rgba(255,252,255,0.75);
 			}
 			
-			
+			.col1{
+				min-width:275px;
+			}
+			.col4{ 
+				min-width:290px;
+			}
+			.linkrow{
+				width:100%;
+				min-height:41px;
+			}
 			a{
 				font-family: 'Rock Salt', cursive;
 				/*font-family: 'Shadows Into Light', cursive;*/
 			   	color: black;
 			   	margin:10px;
-			   	white-space:nowrap;
+			   	white-space:nowrap;-moz-transition-property: all;  /* FF4+ */
+  				-moz-transition-duration: 1s;
+				  -webkit-transition-property: all;  /* Saf3.2+, Chrome */
+				  -webkit-transition-duration: 1s;
+				  -o-transition-property: all;  /* Opera 10.5+ */
+				  -o-transition-duration: 1s;
+				  -ms-transition-property: all;  /* IE10? */
+				  -ms-transition-duration: 1s;
+				  transition-property: all;  /* Standard */
+				  transition-duration: 1s;
 			} 
 			
-			.tossingOver:hover{
+			.linkOver:hover{
 				
-	            		animation-name: tossing;
-				-webkit-animation-name: tossing;	
-
-				animation-duration: 1.0s;	
-				-webkit-animation-duration: 1.0s;
-
-				animation-iteration-count: infinite;
-				-webkit-animation-iteration-count: infinite;
+	             		color:deepskyblue; 
+	             		font-size:107%;
 
 			}
 			
-			.grow { transition: all 0.1s ease-in-out; }
-			.grow:hover { transform: scale(1.02); }
-			 
+			
 			.expander
 			{
 			    
@@ -149,29 +159,43 @@
 </form>
 			</div>-->
 			<div class="grid">
-				<div class="col1 expander slideLeft">
-					<a class="hatch tossingOver" target="_blank" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
+				<div class="col1 expander slideLeft" style="">
+				<div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
 						My Bugs
 					</a>
-				<a class="hatch tossingOver" target="_blank" href="https://slcad684.us.oracle.com:10620/hcmCore/faces/FuseOverview">
+  </div>
+  <div class="linkrow">
+				<a class="hatch linkOver" target="_blank" href="https://slcad684.us.oracle.com:10620/hcmCore/faces/FuseOverview">
 						slcad684
 					</a>
-					<a class="hatch tossingOver" target="_blank" href="https://slcad683.us.oracle.com:10620/hcmCore/faces/FuseOverview">
+     </div>
+  <div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://slcad683.us.oracle.com:10620/hcmCore/faces/FuseOverview">
 						slcad683
 					</a>
-					<a class="hatch tossingOver" target="_blank" href="https://slcai816.us.oracle.com:10620/hcmCore/faces/FuseOverview">
+     </div>
+ <div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://slcai816.us.oracle.com:10620/hcmCore/faces/FuseOverview">
 						slcai816
-					</a>
-					<a class="hatch tossingOver" target="_blank" href="https://oracle.zoom.us/j/7668922342">
+					</a> </div>
+  <div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://oracle.zoom.us/j/7668922342">
 						Sugandha's Zoom
 					</a>
-					<a class="hatch tossingOver" target="_blank" href="https://confluence.oraclecorp.com/confluence/display/TRO/Summary+of+Environments">
+     </div>
+ <div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://confluence.oraclecorp.com/confluence/display/TRO/Summary+of+Environments">
 						Environment Details
 					</a>
-					<a class="hatch tossingOver" target="_blank" href="https://docs.google.com/document/create">
+     </div>
+<div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://docs.google.com/document/create" style="
+">
 						Quick Note
 					</a>
-					
+					 </div>
+  
 				</div>
 				<div class="col2 expander slideLeftDelay1">
 				
@@ -180,16 +204,20 @@
 				
 				</div>
 				<div class="col4 expander slideLeftDelay3">
-					<a class="hatch tossingOver" target="_blank" href="https://youtu.be/eCGV26aj-mM?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
+					<div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="https://youtu.be/eCGV26aj-mM?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
 						Random Music Playlist
 					</a>
-					<a class="hatch tossingOver" target="_blank" href="http://www.tribalfootball.com/clubs/arsenal">
+					</div>
+					<div class="linkrow">
+					<a class="hatch linkOver" target="_blank" href="http://www.tribalfootball.com/clubs/arsenal">
 						Tribal - Arsenal
 					</a>
-					
+					</div>
 				</div>
 			</div>
 		</div>
 	
+
 
 </body></html>
