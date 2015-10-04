@@ -3,7 +3,7 @@ var linksHandler = linksHandler || {},
 
 data = data || {};
 
-(function(todo, data, $) {
+(function(linksHandler, data, $) {
 
     var defaults = {
             linkId: "task-",
@@ -94,7 +94,7 @@ data = data || {};
         data[id] = tempData;
         localStorage.setItem("linksData", JSON.stringify(data));
 
-        // Generate Todo Element
+        // Generate New Link Element
        addElement(tempData);
 
         // Reset Form
@@ -133,4 +133,4 @@ data = data || {};
     };
     
 
-})(todo, data, jQuery);
+})(linksHandler, data, jQuery);
