@@ -1,4 +1,4 @@
-var todo = todo || {},
+var linksHandler = linksHandler || {},
     data = JSON.parse(localStorage.getItem("linksData"));
 
 data = data || {};
@@ -16,7 +16,7 @@ data = data || {};
             "3" : "#persbx"
         };
 
-    todo.init = function (options) {
+    linksHandler.init = function (options) {
 		window.console&&console.log('start init');
         options = options || {};
         options = $.extend({}, defaults, options);
@@ -63,7 +63,7 @@ data = data || {};
         $("#" + defaults.linkId + params.id).remove();
     };
 
-    todo.add = function() {
+    linksHandler.add = function() {
     	window.console&&console.log('start add');
         var inputs = $("#" + defaults.formId + " :input"),
             errorMessage = "Title can not be empty",
