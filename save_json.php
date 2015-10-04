@@ -1,7 +1,7 @@
 <?php
 $myFile = "links.json";
 $fh = fopen($myFile, 'w') or die("can't open file");
-$stringData = $_GET["data"];
+$stringData = $_PUT["data"];
 fwrite($fh, $stringData);
 fclose($fh)
 ?>
