@@ -55,10 +55,10 @@
 			}
 			
 			.col1{
-				min-width:280px;
+				width:280px;
 			}
 			.col2{ 
-				min-width:295px;
+				width:295px;
 			}
 			.linkrow{
 				width:100%;
@@ -68,7 +68,7 @@
 				font-family: 'Rock Salt', cursive;
 				/*font-family: 'Shadows Into Light', cursive;*/
 			   	color: black;
-			   	margin:10px;
+			   	/*margin:10px;*/
 			   	white-space:nowrap;-moz-transition-property: all;  /* FF4+ */
   				-moz-transition-duration: 0.5s;
 				  -webkit-transition-property: all;  /* Saf3.2+, Chrome */
@@ -80,6 +80,12 @@
 				  transition-property: all;  /* Standard */
 				  transition-duration: 0.5s;
 			} 
+			
+			.linkOver{
+				display:block;
+				text-overflow:ellipsis;
+				overflow:hidden;
+			}
 			
 			.linkOver:hover{
 	             		color:white; 
