@@ -2,7 +2,11 @@
 		<title>My Corner</title>
 		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="http://masemason.github.io/mycorner/css/animations.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://masemason.github.io/mycorner/js/linksDataHandler.js"></script>
 		<style type="text/css">
 			
 			h1{
@@ -20,12 +24,13 @@
 			    background-size:cover;
 			    margin:0px;
 			    overflow: hidden;
+			    overflow-y:auto;
 			}
 			.titlebx{
 				background-color:black;
-				height:80px;
+				height:95px;
 				width:100%;
-				padding:10px;
+				padding:20px;
 				opacity:0.3; margin-bottom:20px;
 				border-color: white;
     			border-bottom-width: 15px;
@@ -146,7 +151,7 @@
     			display: none;
     			background: rgba(0,0,0,0.5);
     			border-radius:30px;
-    			box-shadow:0px 0px 95px 10px rgb(0, 114, 153)
+    			box-shadow:0px 0px 95px 10px rgb(0, 114, 153);
 			}
 			#frme{
 				width:100%;
@@ -162,20 +167,69 @@
     			background:url(http://www.openprotocol.gr/content/imgs/img-loading.gif) center center no-repeat;
     			background-size:70px;
 			}
-			#pclose{
-				background-color: rgba(0, 114, 153, 0.7);
+			
+			.blubtn{
+				background-color: rgba(0, 114, 153, 0.9);
     			border-color: black;
     			border-radius: 6px;
     			font-family: 'Rock Salt', cursive;
     			font-weight: bolder;
-    			font-size: 9pt;
+    			
     			color: black;
+    			margin-left:10px;
+    			transition:all 0.5s ease-in-out;
+    			
+			}
+			.blubtn:hover{
+				box-shadow: 0px 0px 25px 0px rgb(0, 114, 153);
+				opacity:0.7;
+				
+			}
+			#pclose{
     			margin-bottom: 7px;
     			position: absolute;
     			right: 30px;
+    			font-size: 9pt;
     			box-shadow: 0px 0px 25px 0px rgb(0, 114, 153);
+    			opacity:0.9;
 			}
-		
+			#pclose:hover{
+				opacity:0.9;
+			}
+			
+			#faddbtn{
+				height:40px;
+				vertical-align:top;
+			}
+			
+			input[type=text]{
+    			border: 1px solid #111;
+    			border-radius:5px;
+    			line-height:40px;
+    			padding-left:0.7em;
+    			font-size: 15px;
+    			height:40px;
+    			background: #444;
+    			color: #fff;
+    			font-family: 'Rock Salt', cursive;
+    			background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
+    			opacity:0.8;
+    			-webkit-appearance: none;
+    
+    			-webkit-box-shadow: 1px 1px 1px #333;
+   				-moz-box-shadow: 1px 1px 1px #333;
+    			box-shadow: 1px 1px 1px #333;
+    			transition:outline-color 0.5s ease-in-out;
+			}
+			input[type=text]:focus { 
+				outline-color: rgb(0, 114, 153) 
+			}
+
+
+			
+			
+			
+			
 		</style>
 		<script>
 		
@@ -200,9 +254,30 @@
     			
   			});
   			
+  			$('#link-form').keypress(function (e) {
+ 				var key = e.which;
+ 				if(key == 13)  // the enter key code
+  				{
+   					 $('input[name = addlnkbtn]').click();
+    				 return false;  
+  				}
+			}); 
+  			
   			//function show_loading(){ $('.loading').show() }
 			//function hide_loading(){ $('.loading').hide() }
+			todo.init();
 		});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		</script>
 	</head>
 	<body>
@@ -217,17 +292,25 @@
 </form>
 			</div>-->
 			<div id="popup" class="">
-				<button id="pclose" type="button">Close</button>
+				<button id="pclose" class="blubtn expander" type="button">Close</button>
 				<div class="frmbg">
 				<div class="frmgif">
-				<iframe id="frme" name="masonfrme" src="http://www.google.com"> 
+				<iframe id="frme" name="masonfrme" src=""> 
                             
   					</iframe>
   					</div>
   					</div>
 			</div>
+		<div class="formwrapper" style="margin:0px 20px">
+		<form id="link-form" method="post" >
+                    <input type="text" style="width:300px" placeholder="Link Name" />
+                    <input type="text" style="width:400px" placeholder="Link URL"></input>
+                    <input type="button" name="addlnkbtn" id="faddbtn" class="blubtn expander" value="Add Link" onclick="todo.add();" />
+                
+                </form>
+                </div>
 			<div class="grid">
-				<div class="col1 expander slideLeft" style="">
+				<div id="workbx" class="col1 expander slideLeft" style="">
 				<div class="linkrow">
 					<a  class="hatch linkOver" target="masonfrme" href="https://bug.oraclecorp.com/pls/bug/webbug_reports.my_open_bugs">
 						My Bugs
