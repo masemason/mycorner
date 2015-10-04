@@ -255,6 +255,10 @@
 			  -webkit-flex-wrap: wrap;
 			  flex-wrap: wrap;
 			}  
+			
+			#link-form{
+/* 				text-align:center; */
+			}
 		</style>
 		<script>
 		
@@ -315,7 +319,9 @@
 			if( isMobile.any() ){
 				$('a').each(function(){
   			 		 $(this).attr('target', '_blank');
-				})
+				});
+				
+				$('#link-form').attr('style', 'text-align:center');
 			};
 		});
 		
