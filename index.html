@@ -273,13 +273,15 @@
 		$(document).ready(function(){
 
   			$('.linkOver').click (function(){
-    			$('#popup').fadeIn(500);
-    			//show_loading;
-    			//$('#frme').load('inc/content.php' , hide_loading );
+  				if( $(this).attr('target') == 'masonfrme'){
+    					$('#popup').fadeIn(500);
+  				}
+    				//show_loading;
+    				//$('#frme').load('inc/content.php' , hide_loading );
   			});
 			
 			$('#pclose').click (function(){
-    			$('#popup').fadeOut(500);
+    				$('#popup').fadeOut(500);
     			
   			});
   			
