@@ -157,11 +157,11 @@
 				visibility: visible !important;	
 			}
 			#popup{
-				height:70%;
-				width:80%;
+				height:90%;
+				width:90%;
 				position:absolute;
 				z-index:4;
-				left:8%;
+				left:5%;
 				padding:20px;
 	    			display: none;
 	    			background: rgba(0,0,0,0.5);
@@ -178,7 +178,7 @@
 				background-color: rgba(0,0,0,0.9);
     				height: 100%;
     			}
-    			.frmgif{
+    		.frmgif{
     				background:url(http://www.openprotocol.gr/content/imgs/img-loading.gif) center center no-repeat;
     				background-size:70px;
 			}
@@ -256,8 +256,19 @@
 			  flex-wrap: wrap;
 			}  
 			
-			#link-form{
-/* 				text-align:center; */
+			#lnknmeinpt{
+				width:300px;
+			}
+	
+			
+			@media screen and (max-width: 540px) {
+				#link-form{
+ 					text-align:center; 
+				}
+				#lnknmeinpt{
+					width:100%;
+					margin-right:10px;
+				}
 			}
 		</style>
 		<script>
@@ -273,15 +284,13 @@
 		$(document).ready(function(){
 
   			$('.linkOver').click (function(){
-  				if( $(this).attr('target') == 'masonfrme'){
-    					$('#popup').fadeIn(500);
-  				}
-    				//show_loading;
-    				//$('#frme').load('inc/content.php' , hide_loading );
+    			$('#popup').fadeIn(500);
+    			//show_loading;
+    			//$('#frme').load('inc/content.php' , hide_loading );
   			});
 			
 			$('#pclose').click (function(){
-    				$('#popup').fadeOut(500);
+    			$('#popup').fadeOut(500);
     			
   			});
   			
@@ -353,7 +362,7 @@
 			</div>
 		<div class="formwrapper" style="margin:0px 20px">
 		<form id="link-form" method="post">
-                    <input type="text" style="width:300px" placeholder="Link Name">
+                    <input type="text" id="lnknmeinpt" style="" placeholder="Link Name">
                     <input type="text" style="width:400px;max-width: 100%;margin-right:10px" placeholder="Link URL">
                     <input type="button" name="addlnkbtn" id="faddbtn" class="blubtn expander" value="Add Link" onclick="linksHandler.add();">
                 
@@ -399,11 +408,13 @@
   
 				</div>
 				<div class="col2 expander slideLeftDelay1">
-					<div class="linkrow">
+					<!-- 
+<div class="linkrow">
 						<a class="hatch linkOver" target="_blank" href="https://youtu.be/eCGV26aj-mM?list=FL3IeMbaG8-Lj_YcfE81vaQQ">
 						Random Music Playlist
 					</a>
 					</div>
+ -->
 					<div class="linkrow">
 						<a class="hatch linkOver" target="masonfrme" href="http://www.tribalfootball.com/clubs/arsenal">
 							Tribal - Arsenal
@@ -416,10 +427,13 @@
 					</div>
 					
 				</div>
-				<!--<div class="col3 expander slideLeftDelay2">
-					<iframe name="masonfrme" src="http://www.google.com"> 
+<!--				<div class="col3 expander slideLeftDelay2">
+ 					<iframe name="masonfrme" src="http://www.google.com">  -->
                             
-  					</iframe>
+<!--   					</iframe> 
+					<iframe src="https://www.evernote.com/pub/masemason/davidmasonspublicnotebook" width="100%" name="My list"> 
+						 
+					</iframe>
 				</div>-->
 				
 				
