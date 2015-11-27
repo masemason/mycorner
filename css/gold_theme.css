@@ -206,7 +206,7 @@
 			}
 			
 			input[type=text]:focus { 
-				outline-color: rgb(0, 114, 153) 
+				outline-color: linen; 
 			}   
 			
 			.flex-container {
