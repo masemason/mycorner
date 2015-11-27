@@ -84,8 +84,7 @@
 			}
 			.expander:hover
 			{
-				background-color:deepskyblue;
-			    	box-shadow: 0px 0px 50px deepskyblue; 
+				
 			    	z-index: 2;
 			    	-webkit-transition: all 200ms ease-in;
 			    	-webkit-transform: scale(1.1);
@@ -163,6 +162,7 @@
 			.blubtn:hover{
 				background-color:powderblue !important;
 				opacity:0.7;
+				box-shadow: 0px 0px 50px powderblue;
 			}
 			#pclose{
 	    			margin-bottom: 7px;
