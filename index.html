@@ -33,6 +33,15 @@
     			
   			});
   			
+  			$('#ggl-form').keypress(function (e) {
+ 				var key = e.which;
+ 				if(key == 13)  // the enter key code
+  				{
+   					 $('input[name = ggllnkbtn]').click();
+    				 return false;  
+  				}
+			}); 
+  			
   			$('#link-form').keypress(function (e) {
  				var key = e.which;
  				if(key == 13)  // the enter key code
@@ -72,7 +81,10 @@
 				});*/
 				
 				$('#link-form').attr('style', 'text-align:center');
+				$('#ggl-form').attr('style', 'text-align:center');
 			};
+			
+			
 		});
 		
 		
@@ -99,6 +111,13 @@
   					</div>
   					</div>
 			</div>
+			<div class="formwrapper" style="margin:0px 20px">
+			<form id="ggl-form" method="post" >
+                    <input type="text" id="gglinpt" style="width:400px;max-width: 100%;margin-right:10px" placeholder="Search Google" autofocus>
+                    <input type="button" name="ggllnkbtn" id="faddbtn" class="blubtn expander" value="Search" onclick="window.location.href = 'https://www.google.co.uk/search?q='+$('#gglinpt').val();">
+                
+                </form>
+                </div>
 		<div class="formwrapper" style="margin:0px 20px">
 		<form id="link-form" method="post">
                     <input type="text" id="lnknmeinpt" style="" placeholder="Link Name">
